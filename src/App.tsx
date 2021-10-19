@@ -8,6 +8,7 @@ import {PhotoItem } from './components/PhotosItem'
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState<Photo[]>([]);
+  console.log(photos)
 
   useEffect(()=>{
     const getPhotos = async () => {
